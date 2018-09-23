@@ -1,5 +1,4 @@
-############################
+
 # INI ADALA BAGIAN AUTORUN #
-############################
 
 sudo /opt/lampp/lampp start

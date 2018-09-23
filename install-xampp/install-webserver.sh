@@ -10,4 +10,4 @@ sudo /opt/lampp/lampp start
 sudo rm -rf /opt/lampp/htdocs/*
 
 git clone https://github.com/kuriyantoadi/smkrg-cbt.git
-sudo cp smkrg-cbt/* /opt/lampp/htdocs
+sudo cp -r smkrg-cbt/* /opt/lampp/htdocs
