@@ -1,0 +1,8 @@
+############################
+# INI ADALA BAGIAN ALIAS   #
+############################
+
+alias lampp='sudo /opt/lampp/lampp'
+alias conip='sudo nano /etc/network/interfaces'
+alias resip='sudo /etc/init.d/networking restart'
+alias htdocs='sudo cd /opt/lampp/htdocs'
