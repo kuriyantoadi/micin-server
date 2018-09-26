@@ -1,7 +1,9 @@
-sudo rm -r /opt/lampp/etc/extra/httpd-vhosts.conf
+#sudo rm -r /opt/lampp/etc/extra/httpd-vhosts.conf
 
-sudo cp file/httpd-vhosts.conf /opt/lampp/etc/extra/
+#sudo cp file/httpd-vhosts.conf /opt/lampp/etc/extra/
 
-sudo /opt/lampp/lampp restart
+#sudo /opt/lampp/lampp restart
 
-echo "Jangan lupa Perbaiki /etc/hosts"
+#echo "Jangan lupa Perbaiki /etc/hosts"
+
+echo "maaf program tidak berlakku"
