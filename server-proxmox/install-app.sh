@@ -1,3 +1,3 @@
 apt install htop
 apt install figlet
- sudo cat ../bash/alias-1 >> $HOME/.bashrc
+cat $HOME/bash/alias-2 >> $HOME/.bashrc
