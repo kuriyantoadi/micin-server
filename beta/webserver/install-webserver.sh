@@ -1,4 +1,7 @@
-echo "Program Web Server"
+echo "##########################################"
+echo "#        Program Micin Server            #"
+echo "#       Instal Database Server           #"
+echo "##########################################"
 
 #install git
 sudo apt install git
