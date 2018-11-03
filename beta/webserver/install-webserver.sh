@@ -10,14 +10,20 @@ if ! [ -x "$(command -v git)" ]; then
   exit 1
 fi
 
-#hapus index
-sudo rm -rf /opt/lampp/htdocs/*
+if [ -e /opt/lampp/htdocs/ujian.php  ]
+then
+  echo ""
+else
+  #hapus index
+  sudo rm -rf /opt/lampp/htdocs/*
 
-#clone cbt dari github
-cd /opt/lampp/htdocs && sudo git clone https://github.com/kuriyantoadi/smkrg-cbt.git
+  #clone cbt dari github
+  cd /opt/lampp/htdocs && sudo git clone https://github.com/kuriyantoadi/smkrg-cbt.git
 
-#Mengubah posisi smkrg-cbt
-sudo mv /opt/lampp/htdocs/smkrg-cbt/* /opt/lampp/htdocs
+  #Mengubah posisi smkrg-cbt
+  sudo mv /opt/lampp/htdocs/smkrg-cbt/* /opt/lampp/htdocs
+
+fi
 
 #restart xampp
 sudo /opt/lampp/lampp restart
