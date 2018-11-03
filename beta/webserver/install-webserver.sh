@@ -3,8 +3,10 @@ echo "#        Program Micin Server            #"
 echo "#         Instal Web Server              #"
 echo "##########################################"
 
-#install git
 
+echo ""
+echo ""
+#install git
 if ! [ -x "$(command -v git)" ]; then
   sudo apt install git
   exit 1
@@ -25,6 +27,7 @@ else
 
   #restart xampp
   sudo /opt/lampp/lampp restart
+  echo ""
 
   if ! [ -x "$(command -v git)" ]; then
     echo -e "Git sudah terinstall                           [\033[1;31m Gagal \033[0m ]" >&2
