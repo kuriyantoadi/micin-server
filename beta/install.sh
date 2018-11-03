@@ -10,6 +10,7 @@ echo ""
 echo "1. Instalasi Database Server"
 echo "2. Instalasi Web Server"
 echo "3. Update Program CBT"
+echo "4. Tambah Alias Server"
 echo ""
 echo -n "Inputkan Pilihan anda : "
 read pil
@@ -29,30 +30,14 @@ read pil
 	then
 	  clear
 	  source webserver/update-cbt.sh
+	elif [ 4 = $pil ]
+	then
+	  clear
+	  source webserver/update-cbt.sh
 	else
-		echo "Maaf, mohon tulis pilihan anda"
+		echo "Maaf, pilihan anda tidak sesuai"
 		exit 0
 	fi
-
-# Memasang Alias
-echo ""
-echo -n "Anda ingin menambah Alias? (Y/N) "
-read als
-
-case $als in
-	y | Y )
-	sudo cat alias-1 >> $HOME/.bashrc
-		;;
-
-  n | N )
-      echo "Anda tidak menginstall alias"
-    ;;
-
-	*)
-		echo "Maaf, perintah yang anda masukan salah"
-		exit 0
-		;;
-esac
 
 #Melakukan pengecekan Program yang sudah berjalan
 	if [ 1 = $pil ]
@@ -65,6 +50,5 @@ esac
 	then
 		source program-cbt/update-cbt.sh
 	else
-		echo "Maaf, mohon tulis pilihan anda"
 		exit 0
 	fi

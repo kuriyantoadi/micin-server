@@ -7,7 +7,7 @@ echo "Program CBT"
 
 #copy file
 #sudo cp -rf smkrg-cbt /opt/lampp/htdocs
-sudo cd /opt/lampp/htdocs && git pull
+cd /opt/lampp/htdocs && git pull
 
 #restart xampp
 sudo /opt/lampp/lampp restart
