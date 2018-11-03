@@ -11,7 +11,7 @@ echo "1. Instalasi Database Server"
 echo "2. Instalasi Web Server"
 echo "3. Update Program CBT"
 echo ""
-echo -n "Inputkan Pilihan anda :"
+echo -n "Inputkan Pilihan anda : "
 read pil
 
 #echo -n "Anda ingin meninstall xampp? (Y/N) "
@@ -36,7 +36,7 @@ read pil
 
 # Memasang Alias
 echo ""
-echo "Anda ingin menambah Alias? (Y/N) "
+echo -n "Anda ingin menambah Alias? (Y/N) "
 read als
 
 case $als in
