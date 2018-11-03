@@ -14,7 +14,7 @@ fi
 sudo rm -rf /opt/lampp/htdocs/*
 
 #clone cbt dari github
-cd /opt/lampp/htdocs && git clone https://github.com/kuriyantoadi/smkrg-cbt.git
+cd /opt/lampp/htdocs && sudo git clone https://github.com/kuriyantoadi/smkrg-cbt.git
 
 #Mengubah posisi smkrg-cbt
 sudo mv /opt/lampp/htdocs/smkrg-cbt/* /opt/lampp/htdocs

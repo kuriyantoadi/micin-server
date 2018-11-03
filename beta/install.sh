@@ -33,7 +33,7 @@ read pil
 	elif [ 4 = $pil ]
 	then
 	  clear
-	  source webserver/update-cbt.sh
+	  source alias/alias.sh
 	else
 		echo "Maaf, pilihan anda tidak sesuai"
 		exit 0
@@ -48,7 +48,7 @@ read pil
 		source webserver/cek-webserver.sh
 	elif [ 3 = $pil ]
 	then
-		source update-cbt.sh
+		source webserver/update-cbt.sh
 	else
 		exit 0
 	fi
