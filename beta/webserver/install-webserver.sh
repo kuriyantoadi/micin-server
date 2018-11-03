@@ -14,7 +14,6 @@ if [ -e /opt/lampp/htdocs/ujian.php  ]
 then
   webserver=1
 else
-  webserver=2
   #hapus index
   sudo rm -rf /opt/lampp/htdocs/*
 
@@ -23,7 +22,7 @@ else
 
   #Mengubah posisi smkrg-cbt
   sudo mv /opt/lampp/htdocs/smkrg-cbt/* /opt/lampp/htdocs
-
+  webserver=2
 fi
 
 #restart xampp
