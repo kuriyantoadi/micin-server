@@ -23,6 +23,7 @@ else
   #Mengubah posisi smkrg-cbt
   sudo mv /opt/lampp/htdocs/smkrg-cbt/* /opt/lampp/htdocs
   webserver=2
+  echo "saya"
 fi
 
 #restart xampp
