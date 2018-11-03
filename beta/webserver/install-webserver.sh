@@ -23,6 +23,7 @@ else
   cd /opt/lampp/htdocs && sudo git clone https://github.com/kuriyantoadi/smkrg-cbt.git
 
   #Mengubah posisi smkrg-cbt
+  sudo cp -r /opt/lampp/htdocs/smkrg-cbt/.git /opt/lampp/htdocs
   sudo cp -r /opt/lampp/htdocs/smkrg-cbt/* /opt/lampp/htdocs
 
 
@@ -38,7 +39,7 @@ else
   fi
 
   #Pengecekan folder smkrg-cbt
-  if [ -e /opt/lampp/htdocs/ujian.php  ]
+  if [ -e /opt/lampp/htdocs/.git  ]
   then
     sudo rm -rf /opt/lampp/htdocs/smkrg-cbt
     echo -e "Menyalin smkrg-cbt                             [\033[1;32m Berhasil \033[0m ]"
