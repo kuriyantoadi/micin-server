@@ -9,7 +9,7 @@ sudo rm -rf /opt/lampp/htdocs/*
 sudo mv /opt/lampp/etc/extra/httpd-xampp.conf /opt/lampp/etc/extra/httpd-xampp.conf.bc
 
 #Melakukan copy file konfigurasi phpmyadmin
-sudo cp file/httpd-xampp.conf /opt/lampp/etc/extra/httpd-xampp.conf
+sudo cp httpd-xampp.conf /opt/lampp/etc/extra/httpd-xampp.conf
 
 #Melakukan restart jaringan
 sudo /opt/lampp/lampp restart
