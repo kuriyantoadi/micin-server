@@ -48,7 +48,7 @@ read pil
 		source webserver/cek-webserver.sh
 	elif [ 3 = $pil ]
 	then
-		source program-cbt/update-cbt.sh
+		source update-cbt.sh
 	else
 		exit 0
 	fi

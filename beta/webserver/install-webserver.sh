@@ -10,14 +10,14 @@ if ! [ -x "$(command -v git)" ]; then
   exit 1
 fi
 
-#clone cbt dari github
-git clone https://github.com/kuriyantoadi/smkrg-cbt.git
-
 #hapus index
 sudo rm -rf /opt/lampp/htdocs/*
 
-##salin file smkrg-cbt ke htdocs
-sudo cp -rf smkrg-cbt/* /opt/lampp/htdocs/
+#clone cbt dari github
+cd /opt/lampp/htdocs && git clone https://github.com/kuriyantoadi/smkrg-cbt.git
+
+#Mengubah posisi smkrg-cbt
+sudo mv /opt/lampp/htdocs/smkrg-cbt/* /opt/lampp/htdocs
 
 #restart xampp
 sudo /opt/lampp/lampp restart
