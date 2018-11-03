@@ -3,7 +3,7 @@ then
   #echo -e "Hapus file Index                                [\033[1;31m Gagal \033[0m    ]"
   echo -e "Tidak perlu melakukan clone                      [\033[1;32m Berhasil \033[0m ]"
 
-else
+elif[ 2 = $webserver]
   #Pengecekan Git
   if ! [ -x "$(command -v git)" ]; then
     echo -e "Git sudah terinstall                            [\033[1;31m Gagal \033[0m ]" >&2
