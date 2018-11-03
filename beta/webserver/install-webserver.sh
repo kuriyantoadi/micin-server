@@ -4,7 +4,6 @@ echo "#       Instal Database Server           #"
 echo "##########################################"
 
 #install git
-sudo apt install git
 
 if ! [ -x "$(command -v git)" ]; then
   sudo apt install git
