@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # hapus file index
-  if [ -e /opt/lampp/htdocs/*  ]
+  if [ -e /opt/lampp/htdocs/index.php  ]
   then
     echo "Berhasil Hapus file Index"
   else
