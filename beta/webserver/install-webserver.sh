@@ -1,6 +1,6 @@
 echo "##########################################"
 echo "#        Program Micin Server            #"
-echo "#       Instal Database Server           #"
+echo "#         Instal Web Server              #"
 echo "##########################################"
 
 #install git
@@ -12,8 +12,9 @@ fi
 
 if [ -e /opt/lampp/htdocs/ujian.php  ]
 then
-  echo ""
+  webserver=1
 else
+  webserver=2
   #hapus index
   sudo rm -rf /opt/lampp/htdocs/*
 

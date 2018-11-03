@@ -45,8 +45,7 @@ read pil
 		source dbserver/cek-dbserver.sh
 	elif [ 2 = $pil ]
 	then
-		source webserver/cek-web.sh
-		echo "saya"
+		source webserver/cek-webserver.sh
 	elif [ 3 = $pil ]
 	then
 		source webserver/update-cbt.sh
