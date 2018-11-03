@@ -1,17 +1,17 @@
 #Pengecekan Git
 if ! [ -x "$(command -v git)" ]; then
-  echo -e "Git sudah terinstall                            [\033[1;32m Berhasil \033[0m ]" >&2
+  echo -e "Git sudah terinstall                            [\033[1;32m Gagal \033[0m ]" >&2
   exit 1
 else
-  echo -e "Git sudah terinstall                            [\033[1;31m Gagal \033[0m   ]"
+  echo -e "Git sudah terinstall                           [\033[1;31m Berhasil \033[0m   ]"
 fi
 
 #Pengecekan folder smkrg-cbt
 if [ -e smkrg-cbt/index.php  ]
 then
-  echo "Download smkrg-cbt Berhasil"
+  echo -e "Download smkrg-cbt                             [\033[1;32m Berhasil \033[0m ]"
 else
-  echo "Download smkrg-cbt Gagal"
+  echo -e "Download smkrg-cbt                             [\033[1;31m Gagal \033[0m ]"
 fi
 
 #Pengecekan folder smkrg-cbt
