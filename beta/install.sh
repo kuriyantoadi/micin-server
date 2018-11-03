@@ -57,15 +57,12 @@ esac
 #Melakukan pengecekan Program yang sudah berjalan
 	if [ 1 = $pil ]
 	then
-		clear
 		source dbserver/cek-dbserver.sh
 	elif [ 2 = $pil ]
 	then
-		clear
 		source webserver/install-webserver.sh
 	elif [ 3 = $pil ]
 	then
-		clear
 		source program-cbt/update-cbt.sh
 	else
 		echo "Maaf, mohon tulis pilihan anda"

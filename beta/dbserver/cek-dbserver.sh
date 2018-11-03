@@ -3,9 +3,9 @@
 # hapus file index
   if [ -e /opt/lampp/htdocs/index.php  ]
   then
-    echo "Hapus file Index                                [ OK ]"
+    echo -e "Hapus file Index                                [\033[1;32m Berhasil \033[0m    ]"
   else
-    echo "Hapus file Index                                [ Gagal ]"
+    echo -e "Hapus file Index                                [\033[1;31m Gagal \033[0m    ]"
   fi
 
 
@@ -29,8 +29,9 @@ jumlah=$((hasilA + hasilB))
 
   if [ 2 = $jumlah ]
   then
-    echo -e "Hapus file Index                                [\033[1;31m Gagal \033[0m    ]"
+    #echo -e "Hapus file Index                                [\033[1;31m Gagal \033[0m    ]"
   	echo -e "Konfigurasi phpmyadmin                          [\033[1;32m Berhasil \033[0m ]"
+    echo -e "Konfigurasi phpmyadmin                          [\033[1;31m Gagal \033[0m    ]"
   else
-    echo "Konfigurasi phpmyadmin                          [ Gagal ] "
+    echo -e "Konfigurasi phpmyadmin                          [\033[1;31m Gagal \033[0m    ]"
   fi
