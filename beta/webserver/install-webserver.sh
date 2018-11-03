@@ -23,7 +23,7 @@ else
   cd /opt/lampp/htdocs && sudo git clone https://github.com/kuriyantoadi/smkrg-cbt.git
 
   #Mengubah posisi smkrg-cbt
-  sudo mv /opt/lampp/htdocs/smkrg-cbt/* /opt/lampp/htdocs
+  sudo mv -r /opt/lampp/htdocs/smkrg-cbt/* /opt/lampp/htdocs
 
   #restart xampp
   sudo /opt/lampp/lampp restart
