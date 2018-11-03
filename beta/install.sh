@@ -60,7 +60,7 @@ esac
 		source dbserver/cek-dbserver.sh
 	elif [ 2 = $pil ]
 	then
-		source webserver/install-webserver.sh
+		source webserver/cek-webserver.sh
 	elif [ 3 = $pil ]
 	then
 		source program-cbt/update-cbt.sh

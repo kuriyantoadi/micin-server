@@ -1,6 +1,9 @@
 #!/bin/bash
 
-echo "Menginstall Database Server"
+echo "##########################################"
+echo "#        Program Micin Server            #"
+echo "#       Instal Database Server           #"
+echo "##########################################"
 
 #Menghapus Index
 sudo rm -rf /opt/lampp/htdocs/*

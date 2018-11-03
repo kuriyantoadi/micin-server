@@ -3,6 +3,11 @@ echo "Program Web Server"
 #install git
 sudo apt install git
 
+if ! [ -x "$(command -v git)" ]; then
+  sudo apt install git
+  exit 1
+fi
+
 #clone cbt dari github
 git clone https://github.com/kuriyantoadi/smkrg-cbt.git
 
