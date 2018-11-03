@@ -22,7 +22,24 @@ else
 
   #Mengubah posisi smkrg-cbt
   sudo mv /opt/lampp/htdocs/smkrg-cbt/* /opt/lampp/htdocs
-  webserver=gagal
+
+  if ! [ -x "$(command -v git)" ]; then
+    echo -e "Git sudah terinstall                           [\033[1;31m Gagal \033[0m ]" >&2
+    exit 1
+  else
+    echo -e "Git sudah terinstall                           [\033[1;32m Berhasil \033[0m ]"
+  fi
+
+  #Pengecekan folder smkrg-cbt
+  if [ -e /opt/lampp/htdocs/ujian.php  ]
+  then
+    echo -e "Menyalin smkrg-cbt                             [\033[1;32m Berhasil \033[0m ]"
+
+  else
+    echo -e "Menyalin smkrg-cbt                             [\033[1;31m Gagal \033[0m    ]"
+  fi
+
+
 fi
 
 #restart xampp
