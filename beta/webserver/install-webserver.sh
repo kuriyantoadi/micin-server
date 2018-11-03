@@ -12,7 +12,7 @@ fi
 
 if [ -e /opt/lampp/htdocs/ujian.php  ]
 then
-  webserver=1
+  echo -e "Tidak perlu melakukan clone                      [\033[1;32m Berhasil \033[0m ]"
 else
   #hapus index
   sudo rm -rf /opt/lampp/htdocs/*
@@ -22,6 +22,9 @@ else
 
   #Mengubah posisi smkrg-cbt
   sudo mv /opt/lampp/htdocs/smkrg-cbt/* /opt/lampp/htdocs
+
+  #restart xampp
+  sudo /opt/lampp/lampp restart
 
   if ! [ -x "$(command -v git)" ]; then
     echo -e "Git sudah terinstall                           [\033[1;31m Gagal \033[0m ]" >&2
@@ -41,6 +44,3 @@ else
 
 
 fi
-
-#restart xampp
-sudo /opt/lampp/lampp restart
