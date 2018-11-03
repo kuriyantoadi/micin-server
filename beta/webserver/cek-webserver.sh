@@ -4,6 +4,7 @@ then
   echo -e "Tidak perlu melakukan clone                      [\033[1;32m Berhasil \033[0m ]"
 
 elif [ 2 = $webserver]
+then
   #Pengecekan Git
   if ! [ -x "$(command -v git)" ]; then
     echo -e "Git sudah terinstall                           [\033[1;31m Gagal \033[0m ]" >&2
@@ -21,4 +22,6 @@ elif [ 2 = $webserver]
     echo -e "Menyalin smkrg-cbt                             [\033[1;31m Gagal \033[0m    ]"
   fi
 
+else
+  echo ""
 fi
