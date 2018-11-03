@@ -11,27 +11,11 @@ echo "1. Instalasi Database Server"
 echo "2. Instalasi Web Server"
 echo "3. Update Program CBT"
 echo ""
-echo "Inputkan Pilihan anda :"
+echo -n "Inputkan Pilihan anda :"
 read pil
 
-echo "Anda ingin meninstall xampp? (Y/N) "
-read xam
-
-case $xam in
-	y | Y )
-	#install xampp
-		;;
-
-  n | N )
-      echo "Anda tidak menginstall xampp"
-    ;;
-
-	*)
-		echo "Maaf, perintah yang anda masukan salah"
-		exit 0
-		;;
-esac
-
+#echo -n "Anda ingin meninstall xampp? (Y/N) "
+#read xam
 
 	if [ 1 = $pil ]
 	then
