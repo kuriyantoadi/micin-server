@@ -6,7 +6,7 @@ echo "Menginstall Database Server"
 sudo rm -rf /opt/lampp/htdocs/*
 
 #Menghapus file file konfigurasi phpmyadmin
-sudo rm /opt/lampp/etc/extra/httpd-xampp.conf
+sudo mv /opt/lampp/etc/extra/httpd-xampp.conf /opt/lampp/etc/extra/httpd-xampp.conf.bc
 
 #Melakukan copy file konfigurasi phpmyadmin
 sudo cp file/httpd-xampp.conf /opt/lampp/etc/extra/httpd-xampp.conf

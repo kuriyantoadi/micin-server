@@ -10,10 +10,7 @@ git clone https://github.com/kuriyantoadi/smkrg-cbt.git
 sudo rm -rf /opt/lampp/htdocs/*
 
 ##salin file smkrg-cbt ke htdocs
-cp -rf smkrg-cbt/* /opt/lampp/htdocs/
-
-#memindah file smkrg-cbt ke program-cbt
-mv -r smkrg-cbt ../program-cbt/
+sudo cp -rf smkrg-cbt/* /opt/lampp/htdocs/
 
 #restart xampp
 sudo /opt/lampp/lampp restart
