@@ -20,7 +20,4 @@ case $webserver in
     else
       echo -e "Menyalin smkrg-cbt                             [\033[1;31m Gagal \033[0m    ]"
     fi
-	*)
-		echo "tidak dikenali"
-		;;
 esac
