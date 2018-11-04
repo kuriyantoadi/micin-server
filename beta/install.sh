@@ -43,12 +43,5 @@ read pil
 	if [ 1 = $pil ]
 	then
 		source dbserver/cek-dbserver.sh
-	elif [ 2 = $pil ]
-	then
-		echo -n ""
-	elif [ 3 = $pil ]
-	then
-		source webserver/update-cbt.sh
-	else
 		exit 0
 	fi
