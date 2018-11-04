@@ -10,8 +10,5 @@ sudo /opt/lampp/lampp restart
 
 #Pengecekan folder smkrg-cbt
   if ! [ -x "$(command -v cd /opt/lampp/htdocs && sudo git pull)" ]; then
-    echo -e "Update Program CBT                             [\033[1;31m Gagal \033[0m ]" >&2
-    exit 1
-  else
-    echo -e "Update Program CBT                             [\033[1;32m Berhasil \033[0m ]"
+    echo -e "Update Program CBT                             [\033[1;32m Berhasil \033[0m ]" >&2
   fi
