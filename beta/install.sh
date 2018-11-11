@@ -11,6 +11,7 @@ echo "1. Instalasi Database Server"
 echo "2. Instalasi Web Server"
 echo "3. Update Program CBT"
 echo "4. Tambah Alias Server"
+echo "5. Cek isi alias"
 echo ""
 echo -n "Inputkan Pilihan anda : "
 read pil
@@ -34,6 +35,10 @@ read pil
 	then
 	  clear
 	  source alias/alias.sh
+	elif [ 5 = $pil ]
+	then
+		clear
+		cat alias/alias-1
 	else
 		echo "Maaf, pilihan anda tidak sesuai"
 		exit 0

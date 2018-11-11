@@ -11,5 +11,5 @@ alias resxa='sudo /opt/lampp/lampp restart'
 alias staxa='sudo /opt/lampp/lampp status'
 alias rebind='sudo service networking restart'
 alias syslog='sudo /var/log/syslog'
-
+alias gp='cd /opt/lampp/htdocs && sudo git pull'
 sudo /opt/lampp/lampp restart
