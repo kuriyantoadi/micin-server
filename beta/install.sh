@@ -41,7 +41,7 @@ read pil
 		cat alias/alias-1
 	else
 		echo "Maaf, pilihan anda tidak sesuai"
-		exit 0
+		exit 1
 	fi
 
 #Melakukan pengecekan Program yang sudah berjalan
