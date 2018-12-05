@@ -3,7 +3,7 @@ read als
 
 case $als in
 	y | Y )
-	sudo cat alias-1 >> $HOME/.bashrc
+	sudo cat alias/alias-1 >> $HOME/.bashrc
 		;;
 
   n | N )
