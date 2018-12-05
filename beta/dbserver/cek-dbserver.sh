@@ -35,3 +35,12 @@ jumlah=$((hasilA + hasilB))
   else
     echo -e "Konfigurasi phpmyadmin                          [\033[1;31m Gagal \033[0m    ]"
   fi
+
+  #Pengecekan folder smkrg-cbt
+  if [ -e /opt/lampp/phpmyadmin/index.php.bc  ]
+  then
+    echo -e "Mengaktifkan index phpmyadmin                   [\033[1;31m Gagal \033[0m    ]"
+
+  else
+    echo -e "Mengaktifkan index phpmyadmin                   [\033[1;32m Berhasil \033[0m ]"
+  fi
